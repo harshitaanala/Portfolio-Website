@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="C:\Users\Admin\Desktop\Portfolio-website\Resume_Harshita_Anala.pdf" target="_blank">Resume</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or just want to get in touch, feel free to send me a message below.</p>
+        
+        <form id="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain" onsubmit="return validateForm()">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <div id="form-message" class="hidden"></div>
+    </section>
+
+    
+</body>
+</html>

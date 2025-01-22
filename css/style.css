@@ -1,0 +1,95 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header navigation */
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 30px;
+}
+
+/* Project container (Grid layout) */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Individual project box */
+.project-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Project box hover effect */
+.project-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Project image */
+.project-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Project links */
+.project-box a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.project-box a:hover {
+    background-color: #555;
+}
